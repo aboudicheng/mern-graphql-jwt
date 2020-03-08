@@ -49,7 +49,7 @@ function useWithAuthenticate() {
     const dispatch = useDispatch();
     useEffect(() => {
         authenticate(dispatch);
-    })
+    }, [])
 }
 
 export default useWithAuthenticate;
